@@ -10,7 +10,8 @@ var firebaseConfig = {
     };
     
     // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
+    user_name = localStorage.getItem("user_name");
+
 
 
 
@@ -23,7 +24,7 @@ function addRoom()
       
       });
 
-      localStorage.setItem("Room_names", Room_names );
+      localStorage.setItem("Room_names", Room_names);
       window.location = "chat_page.html";
 
 }
